@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeLoading()
   initializeNavigation()
   initializeScrollAnimations()
-  initializePortfolioFilter()
+  initializeportofolioFilter()
   initializeContactForm()
   initializeSmoothScroll()
 })
@@ -97,14 +97,14 @@ function initializeScrollAnimations() {
   })
 }
 
-// Portfolio Filter
-function initializePortfolioFilter() {
+// portofolio Filter
+function initializeportofolioFilter() {
   const filterButtons = document.querySelectorAll(".filter-btn")
-  const portfolioItems = document.querySelectorAll(".portfolio-item")
+  const portofolioItems = document.querySelectorAll(".portofolio-item")
 
   // Fungsi untuk apply filter
   function applyFilter(filter) {
-    portfolioItems.forEach((item) => {
+    portofolioItems.forEach((item) => {
       const category = item.getAttribute("data-category")
       if (filter === "all" || category === filter) {
         item.classList.remove("hidden")
